@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,41 +9,62 @@
 <style>
     body {
         margin: 0;
-        font-family: 'Inter', Arial, sans-serif;
+        font-family: "Inter", Arial, sans-serif;
         background: #0d1117;
         color: #e6edf3;
+        overflow-x: hidden;
     }
+
+    /* Smooth animation */
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
     header {
         text-align: center;
-        padding: 80px 20px;
+        padding: 60px 20px;
     }
+
     header h1 {
         font-size: 48px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
+
     header h2 {
         font-weight: 300;
         font-size: 22px;
         color: #9ba3b4;
     }
+
     section {
         max-width: 900px;
-        margin: 50px auto;
+        margin: 40px auto;
         padding: 0 20px;
     }
+
     h3 {
         border-left: 5px solid #2f81f7;
         padding-left: 12px;
         color: #2f81f7;
         font-size: 26px;
+        margin-top: 60px;
     }
+
     .card {
         background: #161b22;
         padding: 25px;
         margin-top: 15px;
         border-radius: 10px;
-        box-shadow: 0 0 18px rgba(0,0,0,0.35);
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+        animation: fadeIn 1.3s ease;
     }
+
     .skills span {
         background: #2f81f7;
         padding: 8px 14px;
@@ -50,14 +72,23 @@
         display: inline-block;
         margin: 6px;
         font-size: 14px;
+        transition: 0.3s;
     }
+
+    .skills span:hover {
+        background: #1a5fcc;
+        transform: scale(1.05);
+    }
+
     a {
         color: #58a6ff;
         text-decoration: none;
     }
+
     footer {
         text-align: center;
         padding: 40px;
+        margin-top: 50px;
         font-size: 14px;
         color: #818b98;
     }
@@ -66,33 +97,33 @@
 
 <body>
 
-<header>
+<header class="fade-in">
     <h1>Sara Kia</h1>
     <h2>Data Engineer • Python • Cloud • AI & Machine Learning</h2>
 
     <!-- PROFILE PHOTO -->
     <div style="text-align:center; margin-top:30px;">
         <img src="man.jpg" alt="Sara Kia"
-             style="width:180px; height:180px; border-radius:50%; border:4px solid #2f81f7; 
-             box-shadow:0 0 18px rgba(0,0,0,0.4); object-fit: cover;">
+            style="width:180px; height:180px; border-radius:50%; border:4px solid #2f81f7; 
+            box-shadow:0 0 18px rgba(0,0,0,0.4); object-fit: cover;">
     </div>
 </header>
 
 <section>
 
     <h3>Professional Summary</h3>
-    <div class="card">
+    <div class="card fade-in">
         <p>
         Data Engineer with strong experience in Python, SQL, ETL pipelines,
         cloud data workflows, and preparing large-scale datasets for Machine Learning.
-        Background includes EEG signal processing, SpaceX telemetry modeling,
-        retail analytics, and AI research. Skilled in automation, data cleaning,
-        feature engineering, and delivering production-ready analytical datasets.
+        Experience includes EEG signal processing, SpaceX telemetry modeling,
+        retail analytics, and automation workflows. Skilled in ETL, cloud systems,
+        feature engineering, and scalable data solutions.
         </p>
     </div>
 
     <h3>Data Engineering Experience</h3>
-    <div class="card">
+    <div class="card fade-in">
         <ul>
             <li>Built scalable ETL/ELT pipelines for EEG, retail, and SpaceX datasets (Python, SQL).</li>
             <li>Automated data-cleaning workflows and feature engineering processes.</li>
@@ -100,49 +131,56 @@
             <li>Designed SQL schemas and optimized analytical queries.</li>
             <li>Containerized preprocessing scripts for cloud deployment (Docker, AWS/Azure).</li>
             <li>Implemented data validation, anomaly detection, and pipeline monitoring tools.</li>
-            <li>Delivered structured, production-ready datasets for ML classification tasks.</li>
         </ul>
     </div>
 
-    <h3>Data Science & Machine Learning Projects</h3>
-    <div class="card">
+    <h3>Machine Learning Projects</h3>
+    <div class="card fade-in">
         <ul>
             <li>EEG Autism Detection – ML classification (85% accuracy).</li>
             <li>ADHD Diagnosis via neural activity patterns – (89% accuracy).</li>
             <li>SpaceX Falcon-9 mission prediction – (85% accuracy).</li>
-            <li>Supermarket data-mining for inventory optimization – (87% accuracy).</li>
+            <li>Retail data-mining for inventory optimization – (87% accuracy).</li>
+        </ul>
+    </div>
+
+    <h3>Certificates</h3>
+    <div class="card fade-in">
+        <ul>
+            <li>AWS Cloud Practitioner (in progress / planned)</li>
+            <li>Microsoft Azure Data Fundamentals</li>
+            <li>Microsoft Azure AI Fundamentals</li>
+            <li>Scrum Master Certification</li>
+            <li>IBM Data Science Professional Certificate</li>
+        </ul>
+    </div>
+
+    <h3>Courses & Trainings</h3>
+    <div class="card fade-in">
+        <ul>
+            <li>IBM – Applied Data Science Capstone</li>
+            <li>IBM – Machine Learning with Python</li>
+            <li>Coursera – Data Engineering with Google Cloud</li>
+            <li>Udemy – Advanced Python for Data Engineering</li>
+            <li>Udemy – SQL Bootcamp (Hands-on)</li>
+            <li>MIT OpenCourseWare – Machine Learning Basics</li>
         </ul>
     </div>
 
     <h3>Technical Skills</h3>
-    <div class="card skills">
+    <div class="card skills fade-in">
         <span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span>
         <span>Scikit-learn</span><span>ETL / ELT</span><span>Data Pipelines</span>
         <span>Docker</span><span>AWS</span><span>Azure</span><span>MATLAB</span>
         <span>Git/GitHub</span><span>Linux</span><span>Tableau</span>
     </div>
 
-    <h3>Robotics & Engineering Background</h3>
-    <div class="card">
-        <p>
-        7+ years of experience teaching Robotics, Physics, and AI.
-        Hands-on expertise with microcontrollers, PLCs, sensors, navigation algorithms,
-        SLAM research, and engineering problem-solving.
-        </p>
-    </div>
-
-    <h3>Education</h3>
-    <div class="card">
-        <p>M.Sc. Artificial Intelligence – Amirkabir University</p>
-        <p>B.Sc. Applied Physics – University of Tehran</p>
-    </div>
-
     <h3>Contact</h3>
-    <div class="card">
+    <div class="card fade-in">
         <p>Email: <a href="mailto:sarakia2050@gmail.com">sarakia2050@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sarakia">linkedin.com/in/sarakia</a></p>
         <p>GitHub: <a href="https://github.com/sarakia2050">github.com/sarakia2050</a></p>
-        <p>Location: Frankfurt am Main, Germany</p>
+        <p>Location: Frankfurt, Germany</p>
     </div>
 
 </section>

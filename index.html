@@ -15,6 +15,13 @@
         overflow-x: hidden;
     }
 
+    /* Fix text visibility */
+    .card p, .card ul, .card li {
+        color: #e6edf3 !important;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
     /* Smooth animation */
     .fade-in {
         opacity: 0;
@@ -33,7 +40,6 @@
 
     header h1 {
         font-size: 48px;
-        margin-bottom: 5px;
     }
 
     header h2 {
@@ -80,17 +86,16 @@
         transform: scale(1.05);
     }
 
-    a {
-        color: #58a6ff;
-        text-decoration: none;
-    }
-
     footer {
         text-align: center;
         padding: 40px;
         margin-top: 50px;
         font-size: 14px;
         color: #818b98;
+    }
+
+    a {
+        color: #58a6ff;
     }
 </style>
 </head>
@@ -101,7 +106,6 @@
     <h1>Sara Kia</h1>
     <h2>Data Engineer • Python • Cloud • AI & Machine Learning</h2>
 
-    <!-- PROFILE PHOTO -->
     <div style="text-align:center; margin-top:30px;">
         <img src="man.jpg" alt="Sara Kia"
             style="width:180px; height:180px; border-radius:50%; border:4px solid #2f81f7; 
@@ -114,65 +118,63 @@
     <h3>Professional Summary</h3>
     <div class="card fade-in">
         <p>
-        Data Engineer with strong experience in Python, SQL, ETL pipelines,
-        cloud data workflows, and preparing large-scale datasets for Machine Learning.
-        Experience includes EEG signal processing, SpaceX telemetry modeling,
-        retail analytics, and automation workflows. Skilled in ETL, cloud systems,
-        feature engineering, and scalable data solutions.
+        Data Engineer with strong expertise in Python, SQL, ETL, cloud data workflows, 
+        feature engineering, and large-scale ML-ready datasets. Experience includes EEG processing, 
+        SpaceX data modeling, retail analytics, and automated data pipelines.
         </p>
     </div>
 
     <h3>Data Engineering Experience</h3>
     <div class="card fade-in">
         <ul>
-            <li>Built scalable ETL/ELT pipelines for EEG, retail, and SpaceX datasets (Python, SQL).</li>
-            <li>Automated data-cleaning workflows and feature engineering processes.</li>
-            <li>Developed batch-processing pipelines using Pandas & NumPy.</li>
+            <li>Built scalable ETL/ELT pipelines for EEG, retail, and SpaceX datasets.</li>
+            <li>Created automated feature engineering & data-cleaning workflows.</li>
             <li>Designed SQL schemas and optimized analytical queries.</li>
-            <li>Containerized preprocessing scripts for cloud deployment (Docker, AWS/Azure).</li>
-            <li>Implemented data validation, anomaly detection, and pipeline monitoring tools.</li>
+            <li>Developed Pandas/NumPy batch pipelines for data processing.</li>
+            <li>Containerized ML preprocessing pipelines (Docker + Cloud).</li>
+            <li>Implemented data validation & anomaly detection systems.</li>
         </ul>
     </div>
 
     <h3>Machine Learning Projects</h3>
     <div class="card fade-in">
         <ul>
-            <li>EEG Autism Detection – ML classification (85% accuracy).</li>
-            <li>ADHD Diagnosis via neural activity patterns – (89% accuracy).</li>
-            <li>SpaceX Falcon-9 mission prediction – (85% accuracy).</li>
-            <li>Retail data-mining for inventory optimization – (87% accuracy).</li>
+            <li>Autism EEG classification – 85% accuracy.</li>
+            <li>ADHD neural signal detection – 89% accuracy.</li>
+            <li>SpaceX Launch Success Prediction – 85% accuracy.</li>
+            <li>Retail Data-Mining & Forecasting – 87% accuracy.</li>
         </ul>
     </div>
 
     <h3>Certificates</h3>
     <div class="card fade-in">
         <ul>
-            <li>AWS Cloud Practitioner (in progress / planned)</li>
-            <li>Microsoft Azure Data Fundamentals</li>
-            <li>Microsoft Azure AI Fundamentals</li>
+            <li>AWS Cloud Practitioner</li>
+            <li>Azure Data Fundamentals</li>
+            <li>Azure AI Fundamentals</li>
             <li>Scrum Master Certification</li>
             <li>IBM Data Science Professional Certificate</li>
         </ul>
     </div>
 
-    <h3>Courses & Trainings</h3>
+    <h3>Courses</h3>
     <div class="card fade-in">
         <ul>
-            <li>IBM – Applied Data Science Capstone</li>
-            <li>IBM – Machine Learning with Python</li>
-            <li>Coursera – Data Engineering with Google Cloud</li>
-            <li>Udemy – Advanced Python for Data Engineering</li>
-            <li>Udemy – SQL Bootcamp (Hands-on)</li>
-            <li>MIT OpenCourseWare – Machine Learning Basics</li>
+            <li>IBM Machine Learning with Python</li>
+            <li>IBM Applied Data Science</li>
+            <li>Google Cloud Data Engineering</li>
+            <li>Udemy Advanced Python</li>
+            <li>Udemy SQL Bootcamp</li>
+            <li>MIT OCW Machine Learning</li>
         </ul>
     </div>
 
     <h3>Technical Skills</h3>
     <div class="card skills fade-in">
-        <span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span>
-        <span>Scikit-learn</span><span>ETL / ELT</span><span>Data Pipelines</span>
-        <span>Docker</span><span>AWS</span><span>Azure</span><span>MATLAB</span>
-        <span>Git/GitHub</span><span>Linux</span><span>Tableau</span>
+        <span>Python</span><span>SQL</span><span>ETL</span><span>Docker</span>
+        <span>Pandas</span><span>NumPy</span><span>Azure</span>
+        <span>AWS</span><span>Git/GitHub</span><span>Linux</span>
+        <span>Tableau</span>
     </div>
 
     <h3>Contact</h3>

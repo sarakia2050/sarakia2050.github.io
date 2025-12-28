@@ -15,14 +15,14 @@
         overflow-x: hidden;
     }
 
-    /* Text fix for cards */
+    /* Fix text visibility inside cards */
     .card p, .card ul, .card li {
         color: #e6edf3 !important;
         font-size: 16px;
         line-height: 1.6;
     }
 
-    /* Smooth animation only for titles */
+    /* Smooth fade animation */
     .fade-in {
         opacity: 0;
         animation: fadeIn 1.2s ease forwards;
@@ -95,7 +95,24 @@
 
     a {
         color: #58a6ff;
+        text-decoration: none;
     }
+
+    .download-btn {
+        display: inline-block;
+        padding: 10px 18px;
+        background: #2f81f7;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: 0.3s;
+    }
+
+    .download-btn:hover {
+        background: #1a5fcc;
+    }
+
 </style>
 </head>
 
@@ -117,30 +134,30 @@
     <h3 class="fade-in">Professional Summary</h3>
     <div class="card">
         <p>
-        Data Engineer with strong expertise in Python, SQL, ETL/ELT pipelines,
-        data cleaning, cloud workflows, and preparing ML-ready datasets.
-        Experience includes EEG signal analysis, SpaceX telemetry modeling,
-        retail data-mining, and building automated analytical pipelines.
+        Data Engineer skilled in Python, SQL, ETL/ELT pipelines, cloud workflows, data cleaning,
+        and preparing ML-ready datasets. Experience includes EEG signal processing,
+        SpaceX telemetry modeling, retail data-mining, and building automated analytical pipelines.
+        Background in AI research and robotics teaching strengthens analytical and engineering skills.
         </p>
     </div>
 
     <h3 class="fade-in">Data Engineering Experience</h3>
     <div class="card">
         <ul>
-            <li>Built ETL/ELT pipelines for EEG, retail, and SpaceX datasets.</li>
-            <li>Developed automated feature engineering & data-cleaning workflows.</li>
-            <li>Designed SQL schemas and optimized analytical queries.</li>
-            <li>Implemented Pandas/NumPy batch pipelines for large datasets.</li>
-            <li>Containerized preprocessing scripts using Docker for cloud deployment.</li>
-            <li>Built validation tools for anomaly detection and data quality checks.</li>
+            <li>Built ETL/ELT data pipelines for EEG, retail, and SpaceX datasets.</li>
+            <li>Automated feature engineering & data-cleaning workflows (Python).</li>
+            <li>Designed SQL schemas and optimized complex analytical queries.</li>
+            <li>Developed batch pipelines using Pandas & NumPy.</li>
+            <li>Dockerized ML preprocessing scripts for cloud deployment.</li>
+            <li>Implemented data validation & anomaly detection systems.</li>
         </ul>
     </div>
 
     <h3 class="fade-in">Machine Learning Projects</h3>
     <div class="card">
         <ul>
-            <li>EEG Autism Detection – 85% accuracy.</li>
-            <li>ADHD Neural Signal Classification – 89% accuracy.</li>
+            <li>Autism EEG Classification – 85% accuracy.</li>
+            <li>ADHD Neural Pattern Detection – 89% accuracy.</li>
             <li>SpaceX Falcon-9 Launch Success Prediction – 85% accuracy (IBM Capstone).</li>
             <li>Retail Data-Mining & Demand Forecasting – 87% accuracy.</li>
         </ul>
@@ -153,7 +170,7 @@
             <li>IBM Machine Learning with Python</li>
             <li>IBM Python for Data Science, AI & Development</li>
             <li>Data Science Capstone – SpaceX Project</li>
-            <li>EEG Signal Processing Research (Academic)</li>
+            <li>EEG Signal Processing Research Training (Academic)</li>
         </ul>
     </div>
 
@@ -165,8 +182,8 @@
             <li>Python for Data Science (IBM / Coursera)</li>
             <li>Data Analysis with Python</li>
             <li>Applied Data Mining – Retail Project</li>
-            <li>EEG Neural Pattern Classification (Autism/ADHD)</li>
-            <li>SpaceX Falcon-9 Launch Prediction – IBM Capstone</li>
+            <li>EEG Neural Classification (Autism & ADHD)</li>
+            <li>SpaceX Falcon-9 Prediction – IBM Capstone</li>
         </ul>
     </div>
 
@@ -176,6 +193,14 @@
         <span>Pandas</span><span>NumPy</span><span>Azure</span>
         <span>AWS</span><span>Git/GitHub</span><span>Linux</span>
         <span>Tableau</span><span>MATLAB</span>
+    </div>
+
+    <h3 class="fade-in">Download Resume</h3>
+    <div class="card">
+        <p>You can download my full CV here:</p>
+        <a href="Sara_Kia_CV.pdf" class="download-btn" download>
+            📄 Download My Resume (PDF)
+        </a>
     </div>
 
     <h3 class="fade-in">Contact</h3>

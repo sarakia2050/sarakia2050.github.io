@@ -15,21 +15,21 @@
         overflow-x: hidden;
     }
 
-    /* Fix text visibility */
+    /* Text fix */
     .card p, .card ul, .card li {
         color: #e6edf3 !important;
         font-size: 16px;
         line-height: 1.6;
     }
 
-    /* Smooth animation */
+    /* Animation only on section titles */
     .fade-in {
         opacity: 0;
         animation: fadeIn 1.2s ease forwards;
     }
 
     @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(10px); }
+        from { opacity: 0; transform: translateY(5px); }
         to { opacity: 1; transform: translateY(0); }
     }
 
@@ -67,8 +67,8 @@
         padding: 25px;
         margin-top: 15px;
         border-radius: 10px;
-        box-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
-        animation: fadeIn 1.3s ease;
+        box-shadow: 0 0 18px rgba(0,0,0,0.35);
+        /* removed animation here */
     }
 
     .skills span {
@@ -115,17 +115,16 @@
 
 <section>
 
-    <h3>Professional Summary</h3>
-    <div class="card fade-in">
+    <h3 class="fade-in">Professional Summary</h3>
+    <div class="card">
         <p>
         Data Engineer with strong expertise in Python, SQL, ETL, cloud data workflows, 
-        feature engineering, and large-scale ML-ready datasets. Experience includes EEG processing, 
-        SpaceX data modeling, retail analytics, and automated data pipelines.
+        feature engineering, and large-scale ML-ready datasets.
         </p>
     </div>
 
-    <h3>Data Engineering Experience</h3>
-    <div class="card fade-in">
+    <h3 class="fade-in">Data Engineering Experience</h3>
+    <div class="card">
         <ul>
             <li>Built scalable ETL/ELT pipelines for EEG, retail, and SpaceX datasets.</li>
             <li>Created automated feature engineering & data-cleaning workflows.</li>
@@ -136,8 +135,8 @@
         </ul>
     </div>
 
-    <h3>Machine Learning Projects</h3>
-    <div class="card fade-in">
+    <h3 class="fade-in">Machine Learning Projects</h3>
+    <div class="card">
         <ul>
             <li>Autism EEG classification – 85% accuracy.</li>
             <li>ADHD neural signal detection – 89% accuracy.</li>
@@ -146,8 +145,8 @@
         </ul>
     </div>
 
-    <h3>Certificates</h3>
-    <div class="card fade-in">
+    <h3 class="fade-in">Certificates</h3>
+    <div class="card">
         <ul>
             <li>AWS Cloud Practitioner</li>
             <li>Azure Data Fundamentals</li>
@@ -157,8 +156,8 @@
         </ul>
     </div>
 
-    <h3>Courses</h3>
-    <div class="card fade-in">
+    <h3 class="fade-in">Courses</h3>
+    <div class="card">
         <ul>
             <li>IBM Machine Learning with Python</li>
             <li>IBM Applied Data Science</li>
@@ -169,16 +168,16 @@
         </ul>
     </div>
 
-    <h3>Technical Skills</h3>
-    <div class="card skills fade-in">
+    <h3 class="fade-in">Technical Skills</h3>
+    <div class="card skills">
         <span>Python</span><span>SQL</span><span>ETL</span><span>Docker</span>
         <span>Pandas</span><span>NumPy</span><span>Azure</span>
         <span>AWS</span><span>Git/GitHub</span><span>Linux</span>
         <span>Tableau</span>
     </div>
 
-    <h3>Contact</h3>
-    <div class="card fade-in">
+    <h3 class="fade-in">Contact</h3>
+    <div class="card">
         <p>Email: <a href="mailto:sarakia2050@gmail.com">sarakia2050@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/sarakia">linkedin.com/in/sarakia</a></p>
         <p>GitHub: <a href="https://github.com/sarakia2050">github.com/sarakia2050</a></p>

@@ -1,121 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>کلیسای ایلیا – کلیسای فارسی‌زبانان فرانکفورت</title>
-
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Tahoma", sans-serif;
-        background: #f8f8f8;
-        color: #333;
-        line-height: 1.9;
-    }
-
-    header {
-        background: #ffffff;
-        text-align: center;
-        padding: 40px 20px;
-        border-bottom: 4px solid #d4af37; /* طلایی کلاسیک */
-    }
-
-    header h1 {
-        font-size: 34px;
-        margin-bottom: 10px;
-        color: #333;
-    }
-
-    header h2 {
-        font-size: 18px;
-        color: #666;
-        margin-top: 5px;
-    }
-
-    .container {
-        max-width: 900px;
-        margin: 40px auto;
-        background: #ffffff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-
-    h3 {
-        font-size: 24px;
-        color: #d4af37;
-        border-right: 5px solid #d4af37;
-        padding-right: 10px;
-        margin-top: 40px;
-    }
-
-    .footer {
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-        background: #ffffff;
-        border-top: 3px solid #d4af37;
-        color: #555;
-    }
-</style>
-</head>
-
-<body>
-
-<header>
-    <h1>کلیسای ایلیا</h1>
-    <h2>کلیسای فارسی‌زبانان فرانکفورت</h2>
-</header>
-
-<div class="container">
-
-    <h3>خوش آمدید</h3>
-    <p>
-        به کلیسای ایلیا خوش آمدید.  
-        جایی برای پرستش، دعا، مشارکت، و رشد روحانی.  
-        ما یک جمع عاشق خدا هستیم که پیام محبت و نجات را با فارسی‌زبانان فرانکفورت و منطقهٔ راین–ماین به اشتراک می‌گذاریم.
-    </p>
-
-    <h3>جلسات کلیسا</h3>
-
-    <p>
-        ⭐ <strong>یکشنبه‌ها – پرستش و موعظه</strong><br>
-        ⏰ ساعت ۱۲:۰۰ ظهر <br>
-        📍 فرانکفورت – نیدراِشباخ <br>
-        🏠 آدرس:  
-        Homburger Landstraße 805,  
-        60437 Frankfurt am Main, Nieder-Eschbach
-    </p>
-
-    <p>
-        ⭐ <strong>جلسهٔ دعا و نیایش – هر دو هفته</strong><br>
-        ⏰ (در صورت اعلام ساعت دقیق، اضافه می‌کنم)  
-    </p>
-
-    <h3>آیهٔ روز</h3>
-    <p style="font-size: 18px; color:#444; border-right:3px solid #d4af37; padding-right:12px;">
-        «زیرا هر جا دو یا سه نفر به نام من جمع شوند، من در میان ایشان هستم.»  
-        <br>— متی ۱۸:۲۰
-    </p>
-
-    <h3>تماس با ما</h3>
-    <p>
-        📞 تلفن حمید:  
-        <strong>+49 157 85537320</strong>
-        <br><br>
-        📧 ایمیل:  
-        <strong>sarakia2050@gmail.com</strong>
-    </p>
-
-</div>
-
-<div class="footer">
-    «خدا پناه و قوت ماست» – مزمور ۴۶  
-    <br>
-    کلیسای ایلیا – کلیسای فارسی‌زبانان فرانکفورت
-</div>
-
-</body>
-</html>
